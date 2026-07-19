@@ -13,8 +13,12 @@ const firebaseConfig = {
 
 // Check if all essential keys exist
 const isFirebaseConfigured =
-  process.env.NEXT_PUBLIC_FIREBASE_API_KEY &&
-  process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID
+  typeof process.env.NEXT_PUBLIC_FIREBASE_API_KEY === 'string' &&
+  process.env.NEXT_PUBLIC_FIREBASE_API_KEY.length > 0 &&
+  process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'undefined' &&
+  typeof process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID === 'string' &&
+  process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID.length > 0 &&
+  process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID !== 'undefined'
 
 export function getFirebaseApp() {
   if (!isFirebaseConfigured) {

@@ -126,7 +126,7 @@ export function Sidebar() {
             <div className="text-xs font-semibold text-foreground truncate">{user?.displayName || 'Demo User'}</div>
             <div className="text-[10px] text-muted-foreground truncate uppercase font-bold">{role}</div>
           </div>
-          <button onClick={logout} className="p-1 rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors">
+          <button onClick={logout} className="p-1 rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors" aria-label="Log out">
             <LogOut className="w-3.5 h-3.5" />
           </button>
         </div>

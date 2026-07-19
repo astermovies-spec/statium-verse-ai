@@ -136,7 +136,7 @@ export function Navbar() {
             </button>
 
             {/* Auth / Profile */}
-            {mounted && (user || isSimulated && role !== 'fan') ? (
+            {mounted && (user || isSimulated) ? (
               <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl glass border border-border/30">
                 <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center">
                   {user?.photoURL ? (
@@ -158,10 +158,10 @@ export function Navbar() {
               </div>
             ) : (
               <Link
-                href="/login"
+                href="/dashboard"
                 className="hidden sm:flex items-center gap-2 px-4 py-1.5 rounded-xl gold-gradient text-black text-sm font-semibold shadow-lg gold-glow hover:scale-105 transition-transform"
               >
-                <span>Secure Login</span>
+                <span>Dashboard</span>
               </Link>
             )}
 

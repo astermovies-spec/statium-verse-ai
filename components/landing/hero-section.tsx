@@ -123,7 +123,7 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
           <Link
-            href={user || isSimulated ? '/dashboard' : '/login'}
+            href={'/dashboard'}
             className="group flex items-center gap-2 px-8 py-3.5 rounded-2xl gold-gradient text-black font-semibold text-base shadow-2xl gold-glow hover:scale-105 transition-all duration-200"
           >
             <Zap className="w-4 h-4" aria-hidden="true" />
