@@ -1,0 +1,21 @@
+{
+  "name": "StadiumVerse AI",
+  "short_name": "StadiumVerse",
+  "description": "The Smart Stadium Operations and Fan Experience Platform powered by Gemini AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0e1a",
+  "theme_color": "#0d0e1a",
+  "icons": [
+    {
+      "src": "/icon-dark-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

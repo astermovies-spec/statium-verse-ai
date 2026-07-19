@@ -1,0 +1,6 @@
+{
+  "name": "StadiumVerse AI",
+  "description": "One AI Platform. Every Fan. Every Match. Every Second. A fully functional AI-powered Smart Stadium and Tournament Operations Platform for FIFA World Cup 2026 using Google Cloud technologies.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
